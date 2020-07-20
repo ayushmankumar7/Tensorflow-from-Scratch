@@ -21,4 +21,6 @@ class Neuron(keras.layers.Layer):
             trainable = True
         )
 
-    
+    def __call__(self, inputs):
+
+        return tf.matmul(inputs, self.w) + self.b
