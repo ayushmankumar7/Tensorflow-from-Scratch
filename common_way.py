@@ -18,9 +18,9 @@ class Linear(keras.layers.Layer):
 
         self.b = self.add_weight(
             shape= (self.units, ),
-            initializer= "random_normal"
+            initializer= "random_normal",
             trainable= True
         )
 
-    def call(self.inputs):
+    def call(self, inputs):
         return tf.matmul(inputs, self.w) + self.b 
