@@ -2,6 +2,17 @@ from tensorflow import keras
 import tensorflow as tf 
 
 
+"""
+This is the replication of single neuron of a Neural Netwok 
+using tf.keras Subclassing apu. 
+
+In this example we take in the inputs and do our 
+Matrix Multiplication and add our bias
+
+
+"""
+
+
 class Neuron(keras.layers.Layer):
 
     def __init__(self, units = 32, input_dim = 32):
