@@ -7,7 +7,7 @@ from common_way import Linear
 class MLPBlock(keras.layers.Layer):
 
     def __init__(self):
-
+        super(MLPBlock, self).__init__()
         self.linear_1 = Linear(32)
         self.linear_2 = Linear(32)
         self.linear_3 = Linear(1)

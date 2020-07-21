@@ -24,3 +24,9 @@ class Linear(keras.layers.Layer):
 
     def call(self, inputs):
         return tf.matmul(inputs, self.w) + self.b 
+
+
+x = tf.ones((2,2))
+lin = Linear(2)
+
+print(lin(x))
